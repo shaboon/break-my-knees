@@ -13,10 +13,10 @@ N/A - Readable in the Browser
 ## Usage
 
 Application Type: Just a .md file that can be access online and read.\
-Or you can go to this Github Gist -\
+Or you can go to this Github Gist
 
 Application Link:\
-https://cuddly-enigma.herokuapp.com/ \
+https://cuddly-enigma.herokuapp.com/
 
 ## Credits
 
