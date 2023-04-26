@@ -13,10 +13,10 @@ Within this gist we will break down and dissect the string into its individual c
 ## Table of Contents
 
 - [Anchors](#anchors)
+- [Character Classes](#character-classes)
+- [Bracket Expressions](#bracket-expressions)
 - [Quantifiers](#quantifiers)
 - [Grouping Constructs](#grouping-constructs)
-- [Bracket Expressions](#bracket-expressions)
-- [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
@@ -27,27 +27,42 @@ Regex itself is strings used to search and find strings inside the body of somet
 
 ### Anchors
 
-The characters "^" and "$" are anchors.\
+The characters `^` and `$` are anchors.\
 
-The "^" means the start of the string and will apply all given criteria after it.\
+The `^` means the start of the string and will apply all given criteria after it.\
 Ex. /^[search text]
 
-Whereas, the "$" symbolizes the end of the string and applies the characters/criteria that come before it.
+Whereas, the `$` symbolizes the end of the string and applies the characters/criteria that come before it.
 Ex. [search text$/]
+
+### Character Classes
+
+Characters in a regex search can be designated and limited via what is assigned. In this section we will cover how you can choose the given characters inside a regex.\
+
+The most general class that can be used to find matching cases is the `.`\
+This class will find and match with all characters, taht being alphanumeric to even whitespace characters\
+Such as: A-Z, a-z, 0-9, spaces, tabs and other special characters\
+
+The next class is `\w`:\
+This class will return all matching cases that are alphabetical values. That being A-Z, or a-z.\
+However, it is important to note that this class does also include the "\_" as well.
+
+A class to find numerical values is `\d`:\
+This class will allow for the regex to search for a string that uses all arabic numbers from 0-9\
+
+The last class that will be covered in this section is the `\s` class\
+This class returns all whitespace characters to the user. As such you will recieve back any spaces (or tabs) and/or\
+line-breaks within the space used.\
+
+### Bracket Expressions
+
+The "[]" specify the space by which criteria can be applied. While not a limit character wise, it does allow for more accurate end points without hardcoding character limits.\
 
 ### Quantifiers
 
 Quantifiers are used to set limits on matching behaviour. While the previous section covered behaviour on where it searched for
 
 ### Grouping Constructs
-
-### Bracket Expressions
-
-The "[]" specify the space by which criteria can be applied. While not a limit character wise, it does allow for more accurate end points without hardcoding character limits.\
-
-### Character Classes
-
-Characters in a regex search can be designated and limited via what is assigned. In this section we will cover how you can choose the given characters inside a regex.\
 
 ### The OR Operator
 
