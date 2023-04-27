@@ -167,3 +167,6 @@ _Finally..._\
 ## Author
 
 My name is Sean Haboon, and thank you for reading through this gist.
+
+To look into my activity, go to my GitHub:\
+https://github.com/shaboon
